@@ -1,0 +1,22 @@
+{
+ "manifest_version": 2,
+ "name": "skipAd_yt",
+ "version": "1.0.0",
+ "description": "Automatical trigger skip ad button on youtube",
+ "author": "Sagar Chikhale",
+ "permissions": ["activeTab"],
+ "content_scripts": [
+   {
+     "matches": ["https://www.youtube.com/*"],
+     "js": ["adRemover.js"]
+   }
+ ],
+ "icons": {
+  "96": "iconAd.png"
+},
+"page_action": {
+    "default_icon": "iconAd.png",
+    "default_title": "skipAd_YT"
+  }
+
+}
